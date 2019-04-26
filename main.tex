@@ -121,10 +121,9 @@
 \maketitle
 
 \begin{abstract}
-  This paper presents semi-automatic software refactorings to introduce and tune structured parallelism in sequential Erlang code, as well as to generate code for running computations on accelerators such as GPUs. Our refactorings are based on the \Lapedo{} framework for programming
-  \emph{heterogeneous} multi-core systems in Erlang. \Lapedo{} utilises a set of \emph{hybrid
-  skeletons} that contain components for different processor types, together with novel \emph{refactorings} for introducing and tuning parallelism together with generating cumbersome boilerplate code for offloading and scheduling 
-  computations on different processors.
+  This paper presents semi-automatic software refactorings to introduce and tune structured parallelism in sequential Erlang code, as well as to generate code for running computations on GPUs and possibly other accelerators. Our refactorings are based on the \Lapedo{} framework for programming
+  \emph{heterogeneous} multi-core systems in Erlang. \Lapedo{} is based on the Wrangler refactoring tool and also contains i) a set of \emph{hybrid
+    skeletons} that target both CPU and GPU processors; ii) novel \emph{refactorings} for introducing and tuning parallelism; and, iii) a tool to generate the GPU offloading and scheduling code in Erlang, that is used as a component of hybrid skeletons.
   We demonstrate, on four realistic use-case applications, that we are able to refactor 
   sequential code and produce heterogeneous parallel versions that can achieve significant and scalable speedups of up to 220
   over the original sequential Erlang program on a 24-core
@@ -194,16 +193,15 @@ The paper makes the following main research contributions:
 %integrating OpenCL kernels with normal Erlang programs;
 %\emph{Should emphasise heterogeneous hybrid, or does that matter?}
 \item
-We introduce new refactorings for identifying and introducing parallelism in Erlang, including novel
-\emph{program shaping} refactorings that are necessary to enable parallelism;
+We introduce new refactorings for introducing hybrid parallelism in Erlang (Section~\ref{sec:hybridRefactorings}) , including novel
+\emph{program shaping} (Section~\ref{sec:shaping}) refactorings to transform between different data structures in order to enable/improve parallelism;
 %\emph{Desribed in terms of their transformation rules and conditions}
 \item
-We introduce new mechanisms to automatically generate the complex and tedious bindings between e.g.
-CPU and GPU instances of a hybrid skeleton, including alternative data representations;
+We introduce new mechanisms to automatically generate the complex and tedious code to offload computations to the accelerators, shedule their execution there and retrieve the results (Section~\ref{sec:gpuCodeGen});
 \item
 We describe how these skeletons, refactorings and tools can be integrated with the existing
 Wrangler refactoring tool to give a comprehensive framework for programming heterogeneous
-multi-core systems;
+multi-core systems (Section~\ref{lapedoframe});
 %\emph{Mention lapedo is available for download and give a website url}
 %\item We describe a mechanism that allow automatic deriving of near-optimal
 %division of work between CPUs and accelerators for simple skeleton 
@@ -212,7 +210,7 @@ multi-core systems;
 %and
 \item
 We demonstrate that the \Lapedo{} framework, extended with the above refactorings, allows us to produce efficient and scalable code for heterogeneous systems,
-achieving real speedups of up to 220 over sequential Erlang programs on a 24-core machine with a GPU.
+achieving real speedups of up to 220 over sequential Erlang programs on a 24-core machine with a GPU (Section~\ref{sec:usecases}).
 %  that
 %   delivers significant and scalable speedups of up to X on 24-core
 %   machine with a GPU
@@ -560,60 +558,66 @@ These accelerators may be manycore processors, such as the Intel Xeon Phi,
 repurposed graphics processing units (GPUs), such as the NVidia Tesla,
 dedicated devices, e.g. Digital Signal Processors (DSPs), such as MSC81xx,
 or even ``soft processors'', e.g. Field Programmable Gate Arrays (FPGAs),
-such as the the Xilinx Virtex UltraScale.  Figure~\ref{fig:CPUvsGPU} compares some typical
-processor types. Compared with CPUs, GPUs and FPGAs offer higher performance at
+such as the the Xilinx Virtex UltraScale. Our main focus in this paper is
+on the systems that comprise a multicore CPU and one or more GPUs; however,
+since the target code we generate uses OpenCL, the methodology is, in principle
+applicable to other classes of accelerators, although it might require additional tuning.
+
+%Figure~\ref{fig:CPUvsGPU} compares some typical
+%processor types.
+Compared with CPUs, GPUs offer higher performance at
 lower clock speeds.  They also deliver advantages in terms of energy usage
 per unit of performance (but often have higher total energy usage).
 However, GPUs are restricted in terms of the parallelism model that is
-offered (data-parallel only), and both GPUs and FPGAs are much more difficult
-to program than traditional CPU-only systems.  Furthermore, accelerators
+offered (data-parallel only), and are siginificantly more difficult
+to program than traditional CPU-only systems.  Furthermore, GPUs 
 typically only offer restricted memory sizes, increasing the effort that
 is required for large or complex problems, and potentially mitigating any
 performance gains.  The recent class of Accelerated Processor Units (APUs),
-such as the AMD Mullins A10 and NVidia Jetson TK1/TX1, 
+such as the AMD Mullins A10 and NVidia Jetson TX2, 
 attempts to alleviate this by providing shared-memory
-access between the CPU and the accelerators as
+access between the CPU and GPUs (and other on-board accelerators) as
 part of a single System-On-Chip.
 The most sophisticated current APUs (e.g. the AMD Mullins and Zynq Ulstrascale+ MPSoC) include CPUs and GPUs within
 the same device.
-In this paper, we will mainly confine ourselves to CPU/GPU combinations, 
-representing the most widely-used class of heterogeneous multicores at the time of writing.
-However, since we are targeting the OpenCL programming model which is supported by other
-types of accelerators (such as FPGAs), our work is also applicable in wider settings.
+%In this paper, we will mainly confine ourselves to CPU/GPU combinations, 
+%representing the most widely-used class of heterogeneous multicores at the time of writing.
+%However, since we are targeting the OpenCL programming model which is supported by other
+%types of accelerators (such as FPGAs), our work is also applicable in wider settings.
 
-\begin{table}[htb]
-\begin{tabularx}{\linewidth}{p{3.6cm}p{4.8cm}p{4.6cm}}
-\hline 
-& CPUs & GPUs \\
-\hline
-\textbf{Parallelism Class} & control- \emph{and} data-parallel (MIMD) & data-parallel (SIMD) \emph{only}\\
-\textbf{Typical Thread Size} & medium--large (\emph{$\mu{}$s}--\emph{ms}) & small (\emph{ns}--\emph{$\mu{}$s}) \\
-\textbf{Typical Scale} & 10s--100s of threads & 1000s of threads \\
-\textbf{Threads sharing} & nothing & instruction pointer \\
-\textbf{Instruction set} & general & simple floating-point operations \\
-\textbf{Typical Clock Speeds} & 2.5--4 Ghz & 800Mhz--1.6GHz \\
-\textbf{Peak Energy Draw} & 100-150W & 120-250W \\
-\textbf{Peak Performance} & 40 GFlops & 13000 GFlops \\
-\textbf{Typical Memory Sizes} & 4--128GB & 1-8GB \\
-\textbf{Ease of Programming} & Moderate & Difficult 
-\end{tabularx}
-\begin{tabularx}{\linewidth}{p{3.6cm}p{4.8cm}p{4.6cm}}
-\hline & FPGAs & APUs \\
-\hline
-\textbf{Parallelism Class} & any (SIMD/MIMD)  & MIMD/SIMD \\
-\textbf{Typical Thread Size} & very small (\emph{ns}) & small/very small (\emph{ms}/\emph{ns}) \\
-\textbf{Typical Scale} & 10,000s of threads & 10s-1000s of threads\\
-\textbf{Threads sharing} & nothing & instruction pointer \\
-\textbf{Instruction set} & none & general and simple floating-point \\
-\textbf{Typical Clock Speeds} & --600MHz & 1.4GHz CPU + 300 MHz GPU\\
-\textbf{Peak Energy Draw} & 10-30W & 4.5W \\
-\textbf{Peak Performance} & 700 GFlops & 128 GFlops \\
-\textbf{Typical Memory Sizes} & MB & 1-8 GB \\
-\textbf{Ease of Programming} & Very Difficult & Difficult 
-\end{tabularx}
-\caption{Comparison of Processor Types (October 2018)}
-\label{fig:CPUvsGPU}
-\end{table}
+%% \begin{table}[htb]
+%% \begin{tabularx}{\linewidth}{p{3.6cm}p{4.8cm}p{4.6cm}}
+%% \hline 
+%% & CPUs & GPUs \\
+%% \hline
+%% \textbf{Parallelism Class} & control- \emph{and} data-parallel (MIMD) & data-parallel (SIMD) \emph{only}\\
+%% \textbf{Typical Thread Size} & medium--large (\emph{$\mu{}$s}--\emph{ms}) & small (\emph{ns}--\emph{$\mu{}$s}) \\
+%% \textbf{Typical Scale} & 10s--100s of threads & 1000s of threads \\
+%% \textbf{Threads sharing} & nothing & instruction pointer \\
+%% \textbf{Instruction set} & general & simple floating-point operations \\
+%% \textbf{Typical Clock Speeds} & 2.5--4 Ghz & 800Mhz--1.6GHz \\
+%% \textbf{Peak Energy Draw} & 100-150W & 120-250W \\
+%% \textbf{Peak Performance} & 40 GFlops & 13000 GFlops \\
+%% \textbf{Typical Memory Sizes} & 4--128GB & 1-8GB \\
+%% \textbf{Ease of Programming} & Moderate & Difficult 
+%% \end{tabularx}
+%% \begin{tabularx}{\linewidth}{p{3.6cm}p{4.8cm}p{4.6cm}}
+%% \hline & FPGAs & APUs \\
+%% \hline
+%% \textbf{Parallelism Class} & any (SIMD/MIMD)  & MIMD/SIMD \\
+%% \textbf{Typical Thread Size} & very small (\emph{ns}) & small/very small (\emph{ms}/\emph{ns}) \\
+%% \textbf{Typical Scale} & 10,000s of threads & 10s-1000s of threads\\
+%% \textbf{Threads sharing} & nothing & instruction pointer \\
+%% \textbf{Instruction set} & none & general and simple floating-point \\
+%% \textbf{Typical Clock Speeds} & --600MHz & 1.4GHz CPU + 300 MHz GPU\\
+%% \textbf{Peak Energy Draw} & 10-30W & 4.5W \\
+%% \textbf{Peak Performance} & 700 GFlops & 128 GFlops \\
+%% \textbf{Typical Memory Sizes} & MB & 1-8 GB \\
+%% \textbf{Ease of Programming} & Very Difficult & Difficult 
+%% \end{tabularx}
+%% \caption{Comparison of Processor Types (October 2018)}
+%% \label{fig:CPUvsGPU}
+%% \end{table}
 
 \paragraph{Conventional Approaches to GPU Programming}
 
@@ -2257,6 +2261,8 @@ similar to \emph{Introduce Hybrid Map} and it is used to insert an instance of a
 \noindent
 It requires an environment, $\Gamma$, a skeleton $\s_g$ that has been generated using the GPU offloading generator from Section~\ref{sec:gpuCodeGen}, and optionally the number of CPU and GPU workers, $n$ and $m$. Unlike in the previous \emph{Introduce Hybrid Map} refactoring, \emph{Introduce Hybrid Farm} does \emph{not} require user-supplied
 minimum chunk size or CPU to GPU ratio values.
+
+Note that the pre-conditions listed above do not include checks to ensure that introduction of the farm skeleton does not also introduce race conditions in the code. These checks are outside of the scope of this paper and we currently rely on the programmer to ensure that the portion of the code where the farm will be introduced is, indeed, side-effects free. In similar refactorings that we have implemented for C++ in other work~\cite{paraformance}, we have a technolgy that checks for race conditions in loops that are turned into skeletons and, furthermore, in some cases suggests the code transformation that can avoid these race conditions. A similar technology could be applied to Erlang.
 
 % \emph{Show this.  KH}
 
