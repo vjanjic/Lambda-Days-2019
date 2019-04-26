@@ -1,0 +1,220 @@
+ant 0 1
+Ratio is {1000,0}
+Loading: ../priv/cl_nif
+Time for (CPU:0,GPU1) is 8512869
+ant 0 1
+Ratio is {1000,0}
+Loading: ../priv/cl_nif
+Time for (CPU:0,GPU1) is 7738025
+ant 0 1
+Ratio is {1000,0}
+Loading: ../priv/cl_nif
+Time for (CPU:0,GPU1) is 8140928
+ant 0 1
+Ratio is {1000,0}
+Loading: ../priv/cl_nif
+Time for (CPU:0,GPU1) is 8085396
+ant 0 1
+Ratio is {1000,0}
+Loading: ../priv/cl_nif
+Time for (CPU:0,GPU1) is 7961665
+ant 1 1
+Ratio is {962,38}
+Loading: ../priv/cl_nif
+Time for (CPU:1,GPU1) is 7979547
+ant 1 1
+Ratio is {962,38}
+Loading: ../priv/cl_nif
+Time for (CPU:1,GPU1) is 8032954
+ant 1 1
+Ratio is {962,38}
+Loading: ../priv/cl_nif
+Time for (CPU:1,GPU1) is 8151349
+ant 1 1
+Ratio is {962,38}
+Loading: ../priv/cl_nif
+Time for (CPU:1,GPU1) is 7989773
+ant 1 1
+Ratio is {962,38}
+Loading: ../priv/cl_nif
+Time for (CPU:1,GPU1) is 8512437
+ant 2 1
+Ratio is {926,74}
+Loading: ../priv/cl_nif
+Time for (CPU:2,GPU1) is 7954627
+ant 2 1
+Ratio is {926,74}
+Loading: ../priv/cl_nif
+Time for (CPU:2,GPU1) is 7932406
+ant 2 1
+Ratio is {926,74}
+Loading: ../priv/cl_nif
+Time for (CPU:2,GPU1) is 7881667
+ant 2 1
+Ratio is {926,74}
+Loading: ../priv/cl_nif
+Time for (CPU:2,GPU1) is 7911154
+ant 2 1
+Ratio is {926,74}
+Loading: ../priv/cl_nif
+Time for (CPU:2,GPU1) is 7930550
+ant 3 1
+Ratio is {895,105}
+Loading: ../priv/cl_nif
+Time for (CPU:3,GPU1) is 8087882
+ant 3 1
+Ratio is {895,105}
+Loading: ../priv/cl_nif
+Time for (CPU:3,GPU1) is 7669710
+ant 3 1
+Ratio is {895,105}
+Loading: ../priv/cl_nif
+Time for (CPU:3,GPU1) is 7895240
+ant 3 1
+Ratio is {895,105}
+Loading: ../priv/cl_nif
+Time for (CPU:3,GPU1) is 7563721
+ant 3 1
+Ratio is {895,105}
+Loading: ../priv/cl_nif
+Time for (CPU:3,GPU1) is 7615203
+ant 4 1
+Ratio is {864,136}
+Loading: ../priv/cl_nif
+Time for (CPU:4,GPU1) is 7555041
+ant 4 1
+Ratio is {864,136}
+Loading: ../priv/cl_nif
+Time for (CPU:4,GPU1) is 7752970
+ant 4 1
+Ratio is {864,136}
+Loading: ../priv/cl_nif
+Time for (CPU:4,GPU1) is 7593859
+ant 4 1
+Ratio is {864,136}
+Loading: ../priv/cl_nif
+Time for (CPU:4,GPU1) is 7616126
+ant 4 1
+Ratio is {864,136}
+Loading: ../priv/cl_nif
+Time for (CPU:4,GPU1) is 7614967
+ant 5 1
+Ratio is {835,165}
+Loading: ../priv/cl_nif
+Time for (CPU:5,GPU1) is 7512426
+ant 5 1
+Ratio is {835,165}
+Loading: ../priv/cl_nif
+Time for (CPU:5,GPU1) is 7478373
+ant 5 1
+Ratio is {835,165}
+Loading: ../priv/cl_nif
+Time for (CPU:5,GPU1) is 7472452
+ant 5 1
+Ratio is {835,165}
+Loading: ../priv/cl_nif
+Time for (CPU:5,GPU1) is 7495613
+ant 5 1
+Ratio is {835,165}
+Loading: ../priv/cl_nif
+Time for (CPU:5,GPU1) is 7472098
+ant 6 1
+Ratio is {808,192}
+Loading: ../priv/cl_nif
+Time for (CPU:6,GPU1) is 7519827
+ant 6 1
+Ratio is {808,192}
+Loading: ../priv/cl_nif
+Time for (CPU:6,GPU1) is 7495798
+ant 6 1
+Ratio is {808,192}
+Loading: ../priv/cl_nif
+Time for (CPU:6,GPU1) is 7470543
+ant 6 1
+Ratio is {808,192}
+Loading: ../priv/cl_nif
+Time for (CPU:6,GPU1) is 7447858
+ant 6 1
+Ratio is {808,192}
+Loading: ../priv/cl_nif
+Time for (CPU:6,GPU1) is 7472547
+ant 7 1
+Ratio is {783,217}
+Loading: ../priv/cl_nif
+Time for (CPU:7,GPU1) is 7362085
+ant 7 1
+Ratio is {783,217}
+Loading: ../priv/cl_nif
+Time for (CPU:7,GPU1) is 7386782
+ant 7 1
+Ratio is {783,217}
+Loading: ../priv/cl_nif
+Time for (CPU:7,GPU1) is 7382942
+ant 7 1
+Ratio is {783,217}
+Loading: ../priv/cl_nif
+Time for (CPU:7,GPU1) is 7328299
+ant 7 1
+Ratio is {783,217}
+Loading: ../priv/cl_nif
+Time for (CPU:7,GPU1) is 7356478
+ant 8 1
+Ratio is {760,240}
+Loading: ../priv/cl_nif
+Time for (CPU:8,GPU1) is 7247372
+ant 8 1
+Ratio is {760,240}
+Loading: ../priv/cl_nif
+Time for (CPU:8,GPU1) is 7273045
+ant 8 1
+Ratio is {760,240}
+Loading: ../priv/cl_nif
+Time for (CPU:8,GPU1) is 7261108
+ant 8 1
+Ratio is {760,240}
+Loading: ../priv/cl_nif
+Time for (CPU:8,GPU1) is 7267841
+ant 8 1
+Ratio is {760,240}
+Loading: ../priv/cl_nif
+Time for (CPU:8,GPU1) is 7263548
+ant 9 1
+Ratio is {739,261}
+Loading: ../priv/cl_nif
+Time for (CPU:9,GPU1) is 7150409
+ant 9 1
+Ratio is {739,261}
+Loading: ../priv/cl_nif
+Time for (CPU:9,GPU1) is 7138852
+ant 9 1
+Ratio is {739,261}
+Loading: ../priv/cl_nif
+Time for (CPU:9,GPU1) is 7135583
+ant 9 1
+Ratio is {739,261}
+Loading: ../priv/cl_nif
+Time for (CPU:9,GPU1) is 7165770
+ant 9 1
+Ratio is {739,261}
+Loading: ../priv/cl_nif
+Time for (CPU:9,GPU1) is 7135126
+ant 10 1
+Ratio is {720,280}
+Loading: ../priv/cl_nif
+Time for (CPU:10,GPU1) is 7094022
+ant 10 1
+Ratio is {720,280}
+Loading: ../priv/cl_nif
+Time for (CPU:10,GPU1) is 7079229
+ant 10 1
+Ratio is {720,280}
+Loading: ../priv/cl_nif
+Time for (CPU:10,GPU1) is 7066666
+ant 10 1
+Ratio is {720,280}
+Loading: ../priv/cl_nif
+Time for (CPU:10,GPU1) is 7108472
+ant 10 1
+Ratio is {720,280}
+Loading: ../priv/cl_nif
+Time for (CPU:10,GPU1) is 7073950

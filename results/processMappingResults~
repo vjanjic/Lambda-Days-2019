@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+
+open ($fh, "<", $ARGV[0]);
+$seq = ARGV[1];
+while (<$fh>) {
+    $data = $_;
+    @items = split (" ", $data);
+    $CPUWs = $item[0];
+    $mapSpdp = $seq/$item[1];
+    $bstSpdp = $seq/$item[2];
+    $eqSpdp = $seq/$item[3];
+    %cmpEq = ($mapSpdp - $eqSpdp) * 100 / $eqSpdp;
+    %cmpMp = ($bstSpdp - $mapSpdp) * 100 / $bstSpdp;
+    print "$CPUWs $mapSpdp $bstSpdp $eqSpdp $cmpEq $cmpMp\n";
+}
+
+

@@ -1,0 +1,275 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{semantic}
+\usepackage{bbm}
+\usepackage{xspace}
+
+\usepackage{nag}
+
+\newcommand{\s}[0]{\bar{s}}
+\newcommand{\type}[3]{#1: #2\; #3}
+\newcommand{\ing}[1]{#1 \in{} \Gamma}
+
+\newcommand{\seq}[3]{#1 & \vdash{} & #2 & = & #3}
+\newcommand{\rewrite}[3]{#1 & \vdash{} & #2 & \mapsto{} & #3}
+\newcommand{\Rewrite}[3]{#1 & \vdash{} & #2 & \mapsto{}^{\!\!\!*} & #3}
+
+\newcommand{\erlang}[0]{\textsc{Erlang}}
+\newcommand{\skel}[0]{Skel}
+\newcommand{\ie}[0]{i.e.\@\xspace}
+
+\begin{document}
+
+\section{Environment Definitions}
+
+\[
+  \begin{array}{l}
+    \gamma = \text{environment} \\
+    \mathbb{F} = \text{the set of functions in}\; \rho \\
+    \mathbb{S} = \{\bar{f}, \mathrm{pipe}(s_1, s_2), \mathrm{farm}(s, n)\} \\
+    \Gamma = \gamma \times \mathbb{S} \\
+    \mathbb{L} = \text{set of all lists} \\
+  \end{array}
+\]
+
+\section{Skeleton Definitions}
+
+\[
+  \begin{array}{rclcl}
+    \Gamma & \vdash{} & \mathcal{F} & = & \{F, \;\mathtt{fun\; ?MODULE:}f\mathtt{/1}, \;\mathtt{fun}(x)
+    \rightarrow \;\dots \;\mathtt{end}\} \\
+    \bar{s},xs \in \Gamma, xs \in \mathbb{L} & \vdash & \mathrm{skel}(\bar{s}, xs) & = & \mathtt{skel:do}(\bar{s}, xs) \\[2em]
+    f \in \Gamma & \vdash & \bar{f} & = & \{\mathtt{func},\; \mathcal{F}\} \\[2em]
+    \bar{s}_1,\bar{s}_2 \in \Gamma & \vdash & pipe(\bar{s}_1,\dots,\bar{s}_n) & = & \{\mathtt{pipe}, [\bar{s}_1,\dots,\bar{s}_n]\} \\[2em]
+    \bar{s} \in \Gamma, n \in \mathbb{N}^{+} & \vdash & farm(\bar{s}, n) & = & \{\mathtt{farm}, \bar{s}, n\} \\[2em]
+    \bar{s}_c,\bar{s}_g \in \Gamma & \vdash & farm'(\bar{s}_c, \bar{s}_g) & = &
+                                                               \{\mathtt{hyb\textunderscore
+                                                               farm}, \bar{s}_c,
+                                                               \bar{s}_g\} \\[1em]
+    \begin{array}{r}
+      \bar{s}_c,\bar{s}_g \in \Gamma, \\ 
+      n,m \in \mathbb{N}^{0}, \\
+      n + m > 0
+    \end{array} \Bigg\} & \vdash & farm''(\bar{s}_c, \bar{s}_g, n, m) & = &
+                                                               \{\mathtt{hyb\textunderscore
+                                                               farm}, \bar{s}_c,
+                                                               \bar{s}_g, n, m\} \\[2em]
+    \bar{s}, p, c \in \Gamma & \vdash & cluster(\bar{s},p,c) & = & \{\mathtt{cluster}, \bar{s},
+                                                                                 \mathcal{F}_p,
+                                                                                 \mathcal{F}_c\}
+    \\[.8em]
+    \bar{s} \in \Gamma & \vdash & cluster(\bar{s}) & = &
+                                                         \begin{array}{l}
+                                                           \{\mathtt{cluster}, \bar{s}, \\
+                                                           \quad \mathtt{fun\;
+                                                           skel:partition/1},\; \\
+                                                           \quad \mathtt{fun\; skel:combine/1}\}
+                                                         \end{array} \\[.8em]
+    \begin{array}{r}
+      \bar{s}_c, \bar{s}_g \in \Gamma, \\
+      n \in \mathbb{N}^{+}, \\
+      m \in \mathbb{R}^{+}, \\
+      x,y \in \mathbb{N}^{0}
+    \end{array} \Bigg\} & \vdash & cluster'(\bar{s}_c, \bar{s}_g, n,
+                               m, x, y) & = & \{\mathtt{hyb\textunderscore
+                                              cluster}, \bar{s}_c, \bar{s}_g, n,
+                                              m, x, y\} \\[2.5em]
+    \begin{array}{r}
+      \bar{s}_c, \bar{s}_g, g, h, i \in \Gamma, \\
+      n \in \mathbb{R}^{+}
+    \end{array} \Big\} & \vdash & cluster''(\bar{s}_c, \bar{s}_g, n,
+                              g, h, i) & = & \{\mathtt{hyb\textunderscore cluster}, \bar{s}_c, \bar{s}_g, n,
+                                               \mathcal{F}_g, \mathcal{F}_h,
+                                             \mathcal{F}_i\} \\
+    xs, l \in \Gamma, l \in \mathbb{N}^{+}, xs \in \mathbb{L} & \vdash & chunk(xs, l) & = & \mathtt{skel:chunk}(xs, l) \\
+  \end{array}
+\]
+
+\section{Rewrite Rules}
+
+\[
+  \begin{array}{rclcl}
+    % \Gamma, f \in \mathbb{F} & \vdash & f & \rightarrow & \bar{f} \\
+    \Gamma, n \in \mathbb{N}^{+} & \vdash & \bar{f} & \rightarrow & farm(\bar{f}, n) \\
+    % \Gamma & \vdash & g(f(x)) & \rightarrow & \mathrm{skel}(\mathrm{pipe}(\bar{f}, \bar{g}), x) \\
+    % \Gamma & \vdash & [f_1(f_2(\dots f_n(x)\dots)) || x \leftarrow xs] &
+    %                                                                      \rightarrow
+    %                                                               &
+    %                                                                 \mathrm{skel}(\mathrm{\overline{pipe}}([\bar{f}_n,
+    %                                                                 \dots, \bar{f}_2, \bar{f}_1]), xs)
+    % \\
+    \Gamma, \bar{s}_{g} \in \mathbb{S} & \vdash & \bar{f} & \rightarrow & farm'(\bar{f}, \bar{s}_{g}) \\
+    \Gamma, \bar{s}_{g} \in \mathbb{S} & \vdash & farm(\bar{s}_c, n) & \rightarrow & farm'(\bar{s}_c, \bar{s}_{g}) \\
+    \Gamma, \bar{s}_{g} \in \mathbb{S}, n,m \in \mathbb{N}^{0} & \vdash & \bar{f} & \rightarrow & farm''(\bar{f}, \bar{s}_{g}, n, m) \\
+    \Gamma, \bar{s}_{g} \in \mathbb{S}, m \in \mathbb{N}^{0} & \vdash &
+                                                                        farm(\bar{s}_c, n) & \rightarrow & farm''(\bar{s}_c, \bar{s}_{g}, n, m) \\
+    \Gamma, p,c \in \mathbb{F} & \vdash & farm(\bar{s}, n) & \rightarrow & cluster(\bar{s}, p, c) \\
+    \begin{array}{r}
+      \Gamma, \bar{s}_{g} \in \mathbb{S}, n \in \mathbb{N}^{+}, \\
+      x,y \in \mathbb{N}^{0}, m \in \mathbb{R}^{+} 
+    \end{array} \bigg\} & \vdash & \bar{f} & \rightarrow & cluster'(\bar{f}, \bar{s}_g, n, m, x, y) \\
+    \begin{array}{r} 
+      \Gamma, \bar{s}_{g} \in \mathbb{S}, n \in \mathbb{R}^{+}, \\
+      g,h,i \in \mathbb{F}
+    \end{array} \Bigg\} & \vdash & \bar{f} & \rightarrow & cluster''(\bar{f}, \bar{s}_g, n, g, h, i) \\
+  \end{array}
+\]
+
+\section{Program Shaping Rewrite Rules}
+\label{sec:shaping-rewrites}
+
+\[
+  \begin{array}{rclcl}
+    \Gamma, c \in \mathbb{N}^{+} & \vdash & \mathrm{skel}(farm(\bar{s}, n), xs) &
+                                                                         \rightarrow
+    & \mathrm{skel}(cluster(\bar{s}), chunk(xs, c)) \\
+    f, xs \in \Gamma, xs \in \mathbbm{L}, f \in \mathbb{F} & \vdash & [f(x)\; ||\; x
+                                                                     \leftarrow
+                                                                     xs] &
+                                                                           \rightarrow &
+                                                                           \mathrm{skel}(cluster(\bar{f}),
+                                                                           chunk(xs))
+    \\
+    \Rewrite{x \in \Gamma}{\mathcal{E}_{x\; :\; list\; a}}{\mathcal{E}_{x'\; :\; binary\; a}} 
+  \end{array}
+\]
+
+\noindent
+Where $\mapsto^{\!*}$ represents the composite application of rewrites to the
+slice of expressions over $x$, denoted $\mathcal{E}_x$, transforming all relevant list
+declarations of $x$ to equivalent binary declarations of $x'$, and all relevant
+list operations on $x$ to those equivalent binary operations on $x'$.
+
+\[
+  \mathbb{a}
+  \mathbb{b}
+  \mathbb{c}
+  \mathbb{d}
+  \mathbb{e}
+  \mathbb{f}
+  \mathbb{g}
+  \mathbb{h}
+  \mathbb{i}
+  \mathbb{j}
+  \mathbb{k}
+  \mathbb{l}
+  \mathbb{m}
+  \mathbb{n}
+  \mathbb{o}
+  \mathbb{p}
+  \mathbb{q}
+  \mathbb{r}
+  \mathbb{s}
+  \mathbb{t}
+  \mathbb{u}
+  \mathbb{v}
+  \mathbb{w}
+  \mathbb{x}
+  \mathbb{y}
+  \mathbb{z}
+\]
+
+\section{Text}
+
+All refactorings given in this paper will be described as semi-formal rewrite
+rules, operating over the abstract syntax tree (AST) of the source program.
+Each refactoring has a set of conditions ensuring the transformation valid, a
+description of the syntax to be transformed, and a description of the syntax
+following successful transformation. Conditions are given as predicates to each
+rule.
+
+Each rewrite rule operates within an environment, $\gamma$, allowing access and
+reference to the current scope of the rewrite rule within the source program.
+This includes a set of all available functions, $\mathbb{F}$. The skeleton
+library \skel, and the skeletons it provides, introduced as part of some below
+refactorings, are denoted by the set $\mathbb{S}$.
+% 
+\[
+  \mathbb{S} = \{skel, \bar{f}, pipe, farm, farm', farm'', cluster, cluster',
+  cluster''\} 
+\]
+% 
+\noindent
+For all rewrite rules, $\mathbb{S}$ is assumed to be in scope; either already
+imported, or imported (perhaps by refactoring) for the refactoring itself. To
+ensure $\mathbb{S}$ accessible, we extend $\gamma$:
+% 
+\[
+  \Gamma = \gamma \cup \mathbb{S}
+\]
+% 
+\noindent
+
+We next define a series of semantic equivalences to allow for more concise
+rewrite rules. Each equivalence is subject to a series of predicates under which
+it is valid, and is defined in the form:
+% 
+\[
+  \begin{array}{rclcl}
+    \seq{\ing{\s, xs}, \type{xs}{list}{a}}
+    {skel(\s, xs)}{\mathtt{skel:do}(\s, xs)} \\
+  \end{array}
+\]
+% 
+\noindent
+Where $\bar{s}$ represents any valid skeleton in $\mathbb{S}$, \ie{}
+$\mathbb{S}/\{skel\}$; and $xs$ evaluates to a list where all elements have the
+same type. Semantic equivalences have been defined for each skeleton in \skel;
+with all definitions given in Fig.~\ref{fig:rewrite-rules-sem-eqs}.
+
+Using these semantic equivalences we define rewrite rules for each refactoring
+introduced here. We divide the rules according to their purpose and type. 
+
+
+
+% All refactorings demonstrated in this paper will be described as a semi-formal
+% rewrite rule operating over the abstract syntax tree (AST) of the source
+% program. Each rewrite rule is predicated by a series of pre-conditions that must
+% be met before that transformation can be applied. Pre-conditions are denoted
+% using the following definitions.
+
+% \[
+%   \begin{array}{rcl}
+%     \gamma & = & \text{Program Environment} \\
+%     \mathbb{F} & = & \text{Set of all functions in $\gamma$} \\
+%     \mathbb{E} & = & \text{Set of all expressions in $\gamma$} \\
+%     \mathbbm{e}_f & = & \text{Set of expressions in function $f$, subset of
+%                         $\mathbb{E}$} \\
+%     \mathbb{L} & = & \text{Set of all possible lists} \\
+%     \mathbb{B} & = & \text{Set of all possible binaries} \\
+%     \mathbb{S} & = & \{\mathrm{skel}, \bar{f}, pipe, farm, farm', farm'', cluster, cluster',
+%                      cluster''\} \\
+%     \Gamma & = & \{\gamma \times \mathbb{S}\}
+%   \end{array}
+% \]
+
+
+
+
+% We next define a series of semantic equivalences to be used in the rewrite
+% rules. Each equivalence is predicated by the context under which it is valid,
+% using the above definitions. 
+
+% (Section 2 here.)
+
+% \erlang{} allows functions to be defined and referenced in multiple ways. To
+% meet these cases, $\mathcal{F}_f$ is defined to represent any valid form of the
+% function $f$. Using the above definitions, rewrite rules can be defined. 
+
+% Each rewrite rule is made up of three parts: assumptions, pre-, and post- forms.
+% The assumptions can be found on the left of the turnstile, and are made up of a
+% series of definitions; primarily expressed in terms of sets. These assumptions
+% can mean both the assumption of a working scope, but also of inputs. These
+% assumptions are predicates; they predicate the rewrite rule. The rewrite rules
+% act over a module/program and apply to all applicable things. These predicates
+% are built from a list of assumptions which represent required aspects of the
+% module before, and any necessary input to the refactoring from the user. We list
+% these assumptions in Section~\ref{}. 
+
+% On the left of the turnstile 
+
+% NB: Mention transitivity of rewrite rules
+
+\end{document}

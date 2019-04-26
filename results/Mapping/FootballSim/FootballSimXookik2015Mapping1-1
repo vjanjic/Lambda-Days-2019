@@ -1,0 +1,979 @@
+****************** CPU 1 GPU 1 ****************
+Ratio is {197,43}
+Predicted ratio : {197,43}
+-- Predicted time
+Task sizes [{43}]
+Loading: ../priv/cl_nif
+Task sizes [{43}]
+Task sizes [{43}]
+---- Ratio {197,43} AvgTime 102502194.0
+-- All times
+Task sizes [{0}]
+Task sizes [{0}]
+Task sizes [{0}]
+---- Ratio {240,0} AvgTime 143479623.66666666
+Task sizes [{1}]
+Task sizes [{1}]
+Task sizes [{1}]
+---- Ratio {239,1} AvgTime 139687018.33333334
+Task sizes [{2}]
+Task sizes [{2}]
+Task sizes [{2}]
+---- Ratio {238,2} AvgTime 143787640.33333334
+Task sizes [{3}]
+Task sizes [{3}]
+Task sizes [{3}]
+---- Ratio {237,3} AvgTime 141987619.0
+Task sizes [{4}]
+Task sizes [{4}]
+Task sizes [{4}]
+---- Ratio {236,4} AvgTime 144362991.66666666
+Task sizes [{5}]
+Task sizes [{5}]
+Task sizes [{5}]
+---- Ratio {235,5} AvgTime 152317378.0
+Task sizes [{6}]
+Task sizes [{6}]
+Task sizes [{6}]
+---- Ratio {234,6} AvgTime 154777685.0
+Task sizes [{7}]
+Task sizes [{7}]
+Task sizes [{7}]
+---- Ratio {233,7} AvgTime 149849500.0
+Task sizes [{8}]
+Task sizes [{8}]
+Task sizes [{8}]
+---- Ratio {232,8} AvgTime 127216257.0
+Task sizes [{9}]
+Task sizes [{9}]
+Task sizes [{9}]
+---- Ratio {231,9} AvgTime 131713838.33333333
+Task sizes [{10}]
+Task sizes [{10}]
+Task sizes [{10}]
+---- Ratio {230,10} AvgTime 120675656.33333333
+Task sizes [{11}]
+Task sizes [{11}]
+Task sizes [{11}]
+---- Ratio {229,11} AvgTime 133377082.0
+Task sizes [{12}]
+Task sizes [{12}]
+Task sizes [{12}]
+---- Ratio {228,12} AvgTime 128393718.66666667
+Task sizes [{13}]
+Task sizes [{13}]
+Task sizes [{13}]
+---- Ratio {227,13} AvgTime 130320719.0
+Task sizes [{14}]
+Task sizes [{14}]
+Task sizes [{14}]
+---- Ratio {226,14} AvgTime 126908495.66666667
+Task sizes [{15}]
+Task sizes [{15}]
+Task sizes [{15}]
+---- Ratio {225,15} AvgTime 135639696.0
+Task sizes [{16}]
+Task sizes [{16}]
+Task sizes [{16}]
+---- Ratio {224,16} AvgTime 124371466.33333333
+Task sizes [{17}]
+Task sizes [{17}]
+Task sizes [{17}]
+---- Ratio {223,17} AvgTime 112827406.0
+Task sizes [{18}]
+Task sizes [{18}]
+Task sizes [{18}]
+---- Ratio {222,18} AvgTime 113791301.0
+Task sizes [{19}]
+Task sizes [{19}]
+Task sizes [{19}]
+---- Ratio {221,19} AvgTime 110912083.66666667
+Task sizes [{20}]
+Task sizes [{20}]
+Task sizes [{20}]
+---- Ratio {220,20} AvgTime 113119901.0
+Task sizes [{21}]
+Task sizes [{21}]
+Task sizes [{21}]
+---- Ratio {219,21} AvgTime 112973714.33333333
+Task sizes [{22}]
+Task sizes [{22}]
+Task sizes [{22}]
+---- Ratio {218,22} AvgTime 110986298.33333333
+Task sizes [{23}]
+Task sizes [{23}]
+Task sizes [{23}]
+---- Ratio {217,23} AvgTime 109411534.0
+Task sizes [{24}]
+Task sizes [{24}]
+Task sizes [{24}]
+---- Ratio {216,24} AvgTime 105469996.0
+Task sizes [{25}]
+Task sizes [{25}]
+Task sizes [{25}]
+---- Ratio {215,25} AvgTime 116787153.0
+Task sizes [{26}]
+Task sizes [{26}]
+Task sizes [{26}]
+---- Ratio {214,26} AvgTime 104024960.33333333
+Task sizes [{27}]
+Task sizes [{27}]
+Task sizes [{27}]
+---- Ratio {213,27} AvgTime 102493837.0
+Task sizes [{28}]
+Task sizes [{28}]
+Task sizes [{28}]
+---- Ratio {212,28} AvgTime 95549329.0
+Task sizes [{29}]
+Task sizes [{29}]
+Task sizes [{29}]
+---- Ratio {211,29} AvgTime 94565868.33333333
+Task sizes [{30}]
+Task sizes [{30}]
+Task sizes [{30}]
+---- Ratio {210,30} AvgTime 94129430.33333333
+Task sizes [{31}]
+Task sizes [{31}]
+Task sizes [{31}]
+---- Ratio {209,31} AvgTime 95676371.33333333
+Task sizes [{32}]
+Task sizes [{32}]
+Task sizes [{32}]
+---- Ratio {208,32} AvgTime 95887579.0
+Task sizes [{33}]
+Task sizes [{33}]
+Task sizes [{33}]
+---- Ratio {207,33} AvgTime 103141418.66666667
+Task sizes [{34}]
+Task sizes [{34}]
+Task sizes [{34}]
+---- Ratio {206,34} AvgTime 89769223.66666667
+Task sizes [{35}]
+Task sizes [{35}]
+Task sizes [{35}]
+---- Ratio {205,35} AvgTime 107993497.0
+Task sizes [{36}]
+Task sizes [{36}]
+Task sizes [{36}]
+---- Ratio {204,36} AvgTime 91136211.66666667
+Task sizes [{37}]
+Task sizes [{37}]
+Task sizes [{37}]
+---- Ratio {203,37} AvgTime 97782324.66666667
+Task sizes [{38}]
+Task sizes [{38}]
+Task sizes [{38}]
+---- Ratio {202,38} AvgTime 103941281.33333333
+Task sizes [{39}]
+Task sizes [{39}]
+Task sizes [{39}]
+---- Ratio {201,39} AvgTime 98368664.0
+Task sizes [{40}]
+Task sizes [{40}]
+Task sizes [{40}]
+---- Ratio {200,40} AvgTime 92207350.0
+Task sizes [{41}]
+Task sizes [{41}]
+Task sizes [{41}]
+---- Ratio {199,41} AvgTime 92416392.33333333
+Task sizes [{42}]
+Task sizes [{42}]
+Task sizes [{42}]
+---- Ratio {198,42} AvgTime 90817948.66666667
+Task sizes [{43}]
+Task sizes [{43}]
+Task sizes [{43}]
+---- Ratio {197,43} AvgTime 97503904.33333333
+Task sizes [{44}]
+Task sizes [{44}]
+Task sizes [{44}]
+---- Ratio {196,44} AvgTime 84115342.33333333
+Task sizes [{45}]
+Task sizes [{45}]
+Task sizes [{45}]
+---- Ratio {195,45} AvgTime 86164490.0
+Task sizes [{46}]
+Task sizes [{46}]
+Task sizes [{46}]
+---- Ratio {194,46} AvgTime 80422580.33333333
+Task sizes [{47}]
+Task sizes [{47}]
+Task sizes [{47}]
+---- Ratio {193,47} AvgTime 88219313.66666667
+Task sizes [{48}]
+Task sizes [{48}]
+Task sizes [{48}]
+---- Ratio {192,48} AvgTime 78076315.66666667
+Task sizes [{49}]
+Task sizes [{49}]
+Task sizes [{49}]
+---- Ratio {191,49} AvgTime 82833211.66666667
+Task sizes [{50}]
+Task sizes [{50}]
+Task sizes [{50}]
+---- Ratio {190,50} AvgTime 85549536.0
+Task sizes [{51}]
+Task sizes [{51}]
+Task sizes [{51}]
+---- Ratio {189,51} AvgTime 75228464.0
+Task sizes [{52}]
+Task sizes [{52}]
+Task sizes [{52}]
+---- Ratio {188,52} AvgTime 86345550.66666667
+Task sizes [{53}]
+Task sizes [{53}]
+Task sizes [{53}]
+---- Ratio {187,53} AvgTime 86022817.33333333
+Task sizes [{54}]
+Task sizes [{54}]
+Task sizes [{54}]
+---- Ratio {186,54} AvgTime 86916522.66666667
+Task sizes [{55}]
+Task sizes [{55}]
+Task sizes [{55}]
+---- Ratio {185,55} AvgTime 76703097.66666667
+Task sizes [{56}]
+Task sizes [{56}]
+Task sizes [{56}]
+---- Ratio {184,56} AvgTime 70664685.0
+Task sizes [{57}]
+Task sizes [{57}]
+Task sizes [{57}]
+---- Ratio {183,57} AvgTime 73450615.0
+Task sizes [{58}]
+Task sizes [{58}]
+Task sizes [{58}]
+---- Ratio {182,58} AvgTime 73471628.66666667
+Task sizes [{59}]
+Task sizes [{59}]
+Task sizes [{59}]
+---- Ratio {181,59} AvgTime 74379729.0
+Task sizes [{60}]
+Task sizes [{60}]
+Task sizes [{60}]
+---- Ratio {180,60} AvgTime 64413883.666666664
+Task sizes [{61}]
+Task sizes [{61}]
+Task sizes [{61}]
+---- Ratio {179,61} AvgTime 69094192.33333333
+Task sizes [{62}]
+Task sizes [{62}]
+Task sizes [{62}]
+---- Ratio {178,62} AvgTime 62244180.666666664
+Task sizes [{63}]
+Task sizes [{63}]
+Task sizes [{63}]
+---- Ratio {177,63} AvgTime 68340704.33333333
+Task sizes [{64}]
+Task sizes [{64}]
+Task sizes [{64}]
+---- Ratio {176,64} AvgTime 67200188.0
+Task sizes [{65}]
+Task sizes [{65}]
+Task sizes [{65}]
+---- Ratio {175,65} AvgTime 71902981.0
+Task sizes [{66}]
+Task sizes [{66}]
+Task sizes [{66}]
+---- Ratio {174,66} AvgTime 65250620.0
+Task sizes [{67}]
+Task sizes [{67}]
+Task sizes [{67}]
+---- Ratio {173,67} AvgTime 68252194.66666667
+Task sizes [{68}]
+Task sizes [{68}]
+Task sizes [{68}]
+---- Ratio {172,68} AvgTime 67211819.33333333
+Task sizes [{69}]
+Task sizes [{69}]
+Task sizes [{69}]
+---- Ratio {171,69} AvgTime 69378064.33333333
+Task sizes [{70}]
+Task sizes [{70}]
+Task sizes [{70}]
+---- Ratio {170,70} AvgTime 64467462.333333336
+Task sizes [{71}]
+Task sizes [{71}]
+Task sizes [{71}]
+---- Ratio {169,71} AvgTime 65893545.333333336
+Task sizes [{72}]
+Task sizes [{72}]
+Task sizes [{72}]
+---- Ratio {168,72} AvgTime 72896129.66666667
+Task sizes [{73}]
+Task sizes [{73}]
+Task sizes [{73}]
+---- Ratio {167,73} AvgTime 66306615.666666664
+Task sizes [{74}]
+Task sizes [{74}]
+Task sizes [{74}]
+---- Ratio {166,74} AvgTime 66509317.333333336
+Task sizes [{75}]
+Task sizes [{75}]
+Task sizes [{75}]
+---- Ratio {165,75} AvgTime 67470706.0
+Task sizes [{76}]
+Task sizes [{76}]
+Task sizes [{76}]
+---- Ratio {164,76} AvgTime 68407782.33333333
+Task sizes [{77}]
+Task sizes [{77}]
+Task sizes [{77}]
+---- Ratio {163,77} AvgTime 69284882.33333333
+Task sizes [{78}]
+Task sizes [{78}]
+Task sizes [{78}]
+---- Ratio {162,78} AvgTime 69919724.33333333
+Task sizes [{79}]
+Task sizes [{79}]
+Task sizes [{79}]
+---- Ratio {161,79} AvgTime 70615382.66666667
+Task sizes [{80}]
+Task sizes [{80}]
+Task sizes [{80}]
+---- Ratio {160,80} AvgTime 71700834.33333333
+Task sizes [{81}]
+Task sizes [{81}]
+Task sizes [{81}]
+---- Ratio {159,81} AvgTime 72161568.0
+Task sizes [{82}]
+Task sizes [{82}]
+Task sizes [{82}]
+---- Ratio {158,82} AvgTime 72916145.33333333
+Task sizes [{83}]
+Task sizes [{83}]
+Task sizes [{83}]
+---- Ratio {157,83} AvgTime 73722117.0
+Task sizes [{84}]
+Task sizes [{84}]
+Task sizes [{84}]
+---- Ratio {156,84} AvgTime 75505441.66666667
+Task sizes [{85}]
+Task sizes [{85}]
+Task sizes [{85}]
+---- Ratio {155,85} AvgTime 74863223.66666667
+Task sizes [{86}]
+Task sizes [{86}]
+Task sizes [{86}]
+---- Ratio {154,86} AvgTime 77172100.00
+Task sizes [{87}]
+Task sizes [{87}]
+Task sizes [{87}]
+---- Ratio {153,87} AvgTime 76738215.33333333
+Task sizes [{88}]
+Task sizes [{88}]
+Task sizes [{88}]
+---- Ratio {152,88} AvgTime 79873123.0
+Task sizes [{89}]
+Task sizes [{89}]
+Task sizes [{89}]
+---- Ratio {151,89} AvgTime 78950846.33333333
+Task sizes [{90}]
+Task sizes [{90}]
+Task sizes [{90}]
+---- Ratio {150,90} AvgTime 79057839.66666667
+Task sizes [{91}]
+Task sizes [{91}]
+Task sizes [{91}]
+---- Ratio {149,91} AvgTime 82735402.33333333
+Task sizes [{92}]
+Task sizes [{92}]
+Task sizes [{92}]
+---- Ratio {148,92} AvgTime 80210687.66666667
+Task sizes [{93}]
+Task sizes [{93}]
+Task sizes [{93}]
+---- Ratio {147,93} AvgTime 82253409.66666667
+Task sizes [{94}]
+Task sizes [{94}]
+Task sizes [{94}]
+---- Ratio {146,94} AvgTime 81711553.66666667
+Task sizes [{95}]
+Task sizes [{95}]
+Task sizes [{95}]
+---- Ratio {145,95} AvgTime 81858405.66666667
+Task sizes [{96}]
+Task sizes [{96}]
+Task sizes [{96}]
+---- Ratio {144,96} AvgTime 83064680.66666667
+Task sizes [{97}]
+Task sizes [{97}]
+Task sizes [{97}]
+---- Ratio {143,97} AvgTime 83863655.33333333
+Task sizes [{98}]
+Task sizes [{98}]
+Task sizes [{98}]
+---- Ratio {142,98} AvgTime 85334798.66666667
+Task sizes [{99}]
+Task sizes [{99}]
+Task sizes [{99}]
+---- Ratio {141,99} AvgTime 85651228.33333333
+Task sizes [{100}]
+Task sizes [{100}]
+Task sizes [{100}]
+---- Ratio {140,100} AvgTime 86262057.66666667
+Task sizes [{101}]
+Task sizes [{101}]
+Task sizes [{101}]
+---- Ratio {139,101} AvgTime 86876430.66666667
+Task sizes [{102}]
+Task sizes [{102}]
+Task sizes [{102}]
+---- Ratio {138,102} AvgTime 88037718.66666667
+Task sizes [{103}]
+Task sizes [{103}]
+Task sizes [{103}]
+---- Ratio {137,103} AvgTime 88680519.0
+Task sizes [{104}]
+Task sizes [{104}]
+Task sizes [{104}]
+---- Ratio {136,104} AvgTime 88928950.0
+Task sizes [{105}]
+Task sizes [{105}]
+Task sizes [{105}]
+---- Ratio {135,105} AvgTime 89860812.33333333
+Task sizes [{106}]
+Task sizes [{106}]
+Task sizes [{106}]
+---- Ratio {134,106} AvgTime 90706275.0
+Task sizes [{107}]
+Task sizes [{107}]
+Task sizes [{107}]
+---- Ratio {133,107} AvgTime 92619096.33333333
+Task sizes [{108}]
+Task sizes [{108}]
+Task sizes [{108}]
+---- Ratio {132,108} AvgTime 91922832.66666667
+Task sizes [{109}]
+Task sizes [{109}]
+Task sizes [{109}]
+---- Ratio {131,109} AvgTime 92620636.0
+Task sizes [{110}]
+Task sizes [{110}]
+Task sizes [{110}]
+---- Ratio {130,110} AvgTime 93297620.33333333
+Task sizes [{111}]
+Task sizes [{111}]
+Task sizes [{111}]
+---- Ratio {129,111} AvgTime 94199930.0
+Task sizes [{112}]
+Task sizes [{112}]
+Task sizes [{112}]
+---- Ratio {128,112} AvgTime 95137022.66666667
+Task sizes [{113}]
+Task sizes [{113}]
+Task sizes [{113}]
+---- Ratio {127,113} AvgTime 96053750.66666667
+Task sizes [{114}]
+Task sizes [{114}]
+Task sizes [{114}]
+---- Ratio {126,114} AvgTime 96668313.33333333
+Task sizes [{115}]
+Task sizes [{115}]
+Task sizes [{115}]
+---- Ratio {125,115} AvgTime 96981586.0
+Task sizes [{116}]
+Task sizes [{116}]
+Task sizes [{116}]
+---- Ratio {124,116} AvgTime 97668167.33333333
+Task sizes [{117}]
+Task sizes [{117}]
+Task sizes [{117}]
+---- Ratio {123,117} AvgTime 98551001.66666667
+Task sizes [{118}]
+Task sizes [{118}]
+Task sizes [{118}]
+---- Ratio {122,118} AvgTime 99440151.33333333
+Task sizes [{119}]
+Task sizes [{119}]
+Task sizes [{119}]
+---- Ratio {121,119} AvgTime 1.002566e8
+Task sizes [{120}]
+Task sizes [{120}]
+Task sizes [{120}]
+---- Ratio {120,120} AvgTime 102251083.0
+Task sizes [{121}]
+Task sizes [{121}]
+Task sizes [{121}]
+---- Ratio {119,121} AvgTime 101604921.33333333
+Task sizes [{122}]
+Task sizes [{122}]
+Task sizes [{122}]
+---- Ratio {118,122} AvgTime 102046866.33333333
+Task sizes [{123}]
+Task sizes [{123}]
+Task sizes [{123}]
+---- Ratio {117,123} AvgTime 103022274.66666667
+Task sizes [{124}]
+Task sizes [{124}]
+Task sizes [{124}]
+---- Ratio {116,124} AvgTime 103299840.33333333
+Task sizes [{125}]
+Task sizes [{125}]
+Task sizes [{125}]
+---- Ratio {115,125} AvgTime 104289449.0
+Task sizes [{126}]
+Task sizes [{126}]
+Task sizes [{126}]
+---- Ratio {114,126} AvgTime 104944549.0
+Task sizes [{127}]
+Task sizes [{127}]
+Task sizes [{127}]
+---- Ratio {113,127} AvgTime 105597794.33333333
+Task sizes [{128}]
+Task sizes [{128}]
+Task sizes [{128}]
+---- Ratio {112,128} AvgTime 106956833.66666667
+Task sizes [{129}]
+Task sizes [{129}]
+Task sizes [{129}]
+---- Ratio {111,129} AvgTime 107276151.0
+Task sizes [{130}]
+Task sizes [{130}]
+Task sizes [{130}]
+---- Ratio {110,130} AvgTime 107971483.0
+Task sizes [{131}]
+Task sizes [{131}]
+Task sizes [{131}]
+---- Ratio {109,131} AvgTime 108700589.0
+Task sizes [{132}]
+Task sizes [{132}]
+Task sizes [{132}]
+---- Ratio {108,132} AvgTime 109700219.66666667
+Task sizes [{133}]
+Task sizes [{133}]
+Task sizes [{133}]
+---- Ratio {107,133} AvgTime 110426171.0
+Task sizes [{134}]
+Task sizes [{134}]
+Task sizes [{134}]
+---- Ratio {106,134} AvgTime 110995734.0
+Task sizes [{135}]
+Task sizes [{135}]
+Task sizes [{135}]
+---- Ratio {105,135} AvgTime 111757899.0
+Task sizes [{136}]
+Task sizes [{136}]
+Task sizes [{136}]
+---- Ratio {104,136} AvgTime 112712350.33333333
+Task sizes [{137}]
+Task sizes [{137}]
+Task sizes [{137}]
+---- Ratio {103,137} AvgTime 113151589.33333333
+Task sizes [{138}]
+Task sizes [{138}]
+Task sizes [{138}]
+---- Ratio {102,138} AvgTime 113854672.0
+Task sizes [{139}]
+Task sizes [{139}]
+Task sizes [{139}]
+---- Ratio {101,139} AvgTime 114566441.66666667
+Task sizes [{140}]
+Task sizes [{140}]
+Task sizes [{140}]
+---- Ratio {100,140} AvgTime 115706565.33333333
+Task sizes [{141}]
+Task sizes [{141}]
+Task sizes [{141}]
+---- Ratio {99,141} AvgTime 116140049.33333333
+Task sizes [{142}]
+Task sizes [{142}]
+Task sizes [{142}]
+---- Ratio {98,142} AvgTime 116780052.33333333
+Task sizes [{143}]
+Task sizes [{143}]
+Task sizes [{143}]
+---- Ratio {97,143} AvgTime 117500599.66666667
+Task sizes [{144}]
+Task sizes [{144}]
+Task sizes [{144}]
+---- Ratio {96,144} AvgTime 118032589.66666667
+Task sizes [{145}]
+Task sizes [{145}]
+Task sizes [{145}]
+---- Ratio {95,145} AvgTime 118555732.0
+Task sizes [{146}]
+Task sizes [{146}]
+Task sizes [{146}]
+---- Ratio {94,146} AvgTime 119253786.66666667
+Task sizes [{147}]
+Task sizes [{147}]
+Task sizes [{147}]
+---- Ratio {93,147} AvgTime 119820966.66666667
+Task sizes [{148}]
+Task sizes [{148}]
+Task sizes [{148}]
+---- Ratio {92,148} AvgTime 120693040.66666667
+Task sizes [{149}]
+Task sizes [{149}]
+Task sizes [{149}]
+---- Ratio {91,149} AvgTime 121229393.33333333
+Task sizes [{150}]
+Task sizes [{150}]
+Task sizes [{150}]
+---- Ratio {90,150} AvgTime 122093762.0
+Task sizes [{151}]
+Task sizes [{151}]
+Task sizes [{151}]
+---- Ratio {89,151} AvgTime 122974642.0
+Task sizes [{152}]
+Task sizes [{152}]
+Task sizes [{152}]
+---- Ratio {88,152} AvgTime 123565859.0
+Task sizes [{153}]
+Task sizes [{153}]
+Task sizes [{153}]
+---- Ratio {87,153} AvgTime 124360669.0
+Task sizes [{154}]
+Task sizes [{154}]
+Task sizes [{154}]
+---- Ratio {86,154} AvgTime 124985594.33333333
+Task sizes [{155}]
+Task sizes [{155}]
+Task sizes [{155}]
+---- Ratio {85,155} AvgTime 125759106.66666667
+Task sizes [{156}]
+Task sizes [{156}]
+Task sizes [{156}]
+---- Ratio {84,156} AvgTime 126539385.0
+Task sizes [{157}]
+Task sizes [{157}]
+Task sizes [{157}]
+---- Ratio {83,157} AvgTime 127324945.0
+Task sizes [{158}]
+Task sizes [{158}]
+Task sizes [{158}]
+---- Ratio {82,158} AvgTime 128169146.66666667
+Task sizes [{159}]
+Task sizes [{159}]
+Task sizes [{159}]
+---- Ratio {81,159} AvgTime 128719193.33333333
+Task sizes [{160}]
+Task sizes [{160}]
+Task sizes [{160}]
+---- Ratio {80,160} AvgTime 129575811.66666667
+Task sizes [{161}]
+Task sizes [{161}]
+Task sizes [{161}]
+---- Ratio {79,161} AvgTime 130061871.66666667
+Task sizes [{162}]
+Task sizes [{162}]
+Task sizes [{162}]
+---- Ratio {78,162} AvgTime 130950036.33333333
+Task sizes [{163}]
+Task sizes [{163}]
+Task sizes [{163}]
+---- Ratio {77,163} AvgTime 131728417.66666667
+Task sizes [{164}]
+Task sizes [{164}]
+Task sizes [{164}]
+---- Ratio {76,164} AvgTime 132359448.0
+Task sizes [{165}]
+Task sizes [{165}]
+Task sizes [{165}]
+---- Ratio {75,165} AvgTime 133338771.66666667
+Task sizes [{166}]
+Task sizes [{166}]
+Task sizes [{166}]
+---- Ratio {74,166} AvgTime 133827123.33333333
+Task sizes [{167}]
+Task sizes [{167}]
+Task sizes [{167}]
+---- Ratio {73,167} AvgTime 134828790.66666666
+Task sizes [{168}]
+Task sizes [{168}]
+Task sizes [{168}]
+---- Ratio {72,168} AvgTime 135381087.33333334
+Task sizes [{169}]
+Task sizes [{169}]
+Task sizes [{169}]
+---- Ratio {71,169} AvgTime 136136741.33333334
+Task sizes [{170}]
+Task sizes [{170}]
+Task sizes [{170}]
+---- Ratio {70,170} AvgTime 136841735.66666666
+Task sizes [{171}]
+Task sizes [{171}]
+Task sizes [{171}]
+---- Ratio {69,171} AvgTime 137553232.66666666
+Task sizes [{172}]
+Task sizes [{172}]
+Task sizes [{172}]
+---- Ratio {68,172} AvgTime 138199995.66666666
+Task sizes [{173}]
+Task sizes [{173}]
+Task sizes [{173}]
+---- Ratio {67,173} AvgTime 139062256.33333334
+Task sizes [{174}]
+Task sizes [{174}]
+Task sizes [{174}]
+---- Ratio {66,174} AvgTime 139799632.66666666
+Task sizes [{175}]
+Task sizes [{175}]
+Task sizes [{175}]
+---- Ratio {65,175} AvgTime 140488048.0
+Task sizes [{176}]
+Task sizes [{176}]
+Task sizes [{176}]
+---- Ratio {64,176} AvgTime 141156599.66666666
+Task sizes [{177}]
+Task sizes [{177}]
+Task sizes [{177}]
+---- Ratio {63,177} AvgTime 142057490.33333334
+Task sizes [{178}]
+Task sizes [{178}]
+Task sizes [{178}]
+---- Ratio {62,178} AvgTime 142719835.0
+Task sizes [{179}]
+Task sizes [{179}]
+Task sizes [{179}]
+---- Ratio {61,179} AvgTime 143452518.33333334
+Task sizes [{180}]
+Task sizes [{180}]
+Task sizes [{180}]
+---- Ratio {60,180} AvgTime 144280517.0
+Task sizes [{181}]
+Task sizes [{181}]
+Task sizes [{181}]
+---- Ratio {59,181} AvgTime 145015851.33333334
+Task sizes [{182}]
+Task sizes [{182}]
+Task sizes [{182}]
+---- Ratio {58,182} AvgTime 145691916.66666666
+Task sizes [{183}]
+Task sizes [{183}]
+Task sizes [{183}]
+---- Ratio {57,183} AvgTime 146322886.33333334
+Task sizes [{184}]
+Task sizes [{184}]
+Task sizes [{184}]
+---- Ratio {56,184} AvgTime 147272302.33333334
+Task sizes [{185}]
+Task sizes [{185}]
+Task sizes [{185}]
+---- Ratio {55,185} AvgTime 147894828.33333334
+Task sizes [{186}]
+Task sizes [{186}]
+Task sizes [{186}]
+---- Ratio {54,186} AvgTime 148613620.0
+Task sizes [{187}]
+Task sizes [{187}]
+Task sizes [{187}]
+---- Ratio {53,187} AvgTime 149435251.0
+Task sizes [{188}]
+Task sizes [{188}]
+Task sizes [{188}]
+---- Ratio {52,188} AvgTime 150060247.33333334
+Task sizes [{189}]
+Task sizes [{189}]
+Task sizes [{189}]
+---- Ratio {51,189} AvgTime 150880295.66666666
+Task sizes [{190}]
+Task sizes [{190}]
+Task sizes [{190}]
+---- Ratio {50,190} AvgTime 151661823.0
+Task sizes [{191}]
+Task sizes [{191}]
+Task sizes [{191}]
+---- Ratio {49,191} AvgTime 152270747.33333334
+Task sizes [{192}]
+Task sizes [{192}]
+Task sizes [{192}]
+---- Ratio {48,192} AvgTime 153114775.66666666
+Task sizes [{193}]
+Task sizes [{193}]
+Task sizes [{193}]
+---- Ratio {47,193} AvgTime 153863545.0
+Task sizes [{194}]
+Task sizes [{194}]
+Task sizes [{194}]
+---- Ratio {46,194} AvgTime 154530280.0
+Task sizes [{195}]
+Task sizes [{195}]
+Task sizes [{195}]
+---- Ratio {45,195} AvgTime 155090619.66666666
+Task sizes [{196}]
+Task sizes [{196}]
+Task sizes [{196}]
+---- Ratio {44,196} AvgTime 155865591.66666666
+Task sizes [{197}]
+Task sizes [{197}]
+Task sizes [{197}]
+---- Ratio {43,197} AvgTime 156652495.66666666
+Task sizes [{198}]
+Task sizes [{198}]
+Task sizes [{198}]
+---- Ratio {42,198} AvgTime 157339526.66666666
+Task sizes [{199}]
+Task sizes [{199}]
+Task sizes [{199}]
+---- Ratio {41,199} AvgTime 158156762.0
+Task sizes [{200}]
+Task sizes [{200}]
+Task sizes [{200}]
+---- Ratio {40,200} AvgTime 158998930.33333334
+Task sizes [{201}]
+Task sizes [{201}]
+Task sizes [{201}]
+---- Ratio {39,201} AvgTime 159709295.33333334
+Task sizes [{202}]
+Task sizes [{202}]
+Task sizes [{202}]
+---- Ratio {38,202} AvgTime 160305285.33333334
+Task sizes [{203}]
+Task sizes [{203}]
+Task sizes [{203}]
+---- Ratio {37,203} AvgTime 161105702.33333334
+Task sizes [{204}]
+Task sizes [{204}]
+Task sizes [{204}]
+---- Ratio {36,204} AvgTime 161811053.33333334
+Task sizes [{205}]
+Task sizes [{205}]
+Task sizes [{205}]
+---- Ratio {35,205} AvgTime 162570476.0
+Task sizes [{206}]
+Task sizes [{206}]
+Task sizes [{206}]
+---- Ratio {34,206} AvgTime 164264679.0
+Task sizes [{207}]
+Task sizes [{207}]
+Task sizes [{207}]
+---- Ratio {33,207} AvgTime 164104994.33333334
+Task sizes [{208}]
+Task sizes [{208}]
+Task sizes [{208}]
+---- Ratio {32,208} AvgTime 164695262.66666666
+Task sizes [{209}]
+Task sizes [{209}]
+Task sizes [{209}]
+---- Ratio {31,209} AvgTime 165457503.33333334
+Task sizes [{210}]
+Task sizes [{210}]
+Task sizes [{210}]
+---- Ratio {30,210} AvgTime 166271828.0
+Task sizes [{211}]
+Task sizes [{211}]
+Task sizes [{211}]
+---- Ratio {29,211} AvgTime 166977247.0
+Task sizes [{212}]
+Task sizes [{212}]
+Task sizes [{212}]
+---- Ratio {28,212} AvgTime 167801988.33333334
+Task sizes [{213}]
+Task sizes [{213}]
+Task sizes [{213}]
+---- Ratio {27,213} AvgTime 168500671.0
+Task sizes [{214}]
+Task sizes [{214}]
+Task sizes [{214}]
+---- Ratio {26,214} AvgTime 169168432.33333334
+Task sizes [{215}]
+Task sizes [{215}]
+Task sizes [{215}]
+---- Ratio {25,215} AvgTime 170000204.66666666
+Task sizes [{216}]
+Task sizes [{216}]
+Task sizes [{216}]
+---- Ratio {24,216} AvgTime 170688259.66666666
+Task sizes [{217}]
+Task sizes [{217}]
+Task sizes [{217}]
+---- Ratio {23,217} AvgTime 171395592.33333334
+Task sizes [{218}]
+Task sizes [{218}]
+Task sizes [{218}]
+---- Ratio {22,218} AvgTime 172232016.66666666
+Task sizes [{219}]
+Task sizes [{219}]
+Task sizes [{219}]
+---- Ratio {21,219} AvgTime 173028770.0
+Task sizes [{220}]
+Task sizes [{220}]
+Task sizes [{220}]
+---- Ratio {20,220} AvgTime 173811005.66666666
+Task sizes [{221}]
+Task sizes [{221}]
+Task sizes [{221}]
+---- Ratio {19,221} AvgTime 174502233.0
+Task sizes [{222}]
+Task sizes [{222}]
+Task sizes [{222}]
+---- Ratio {18,222} AvgTime 175202548.66666666
+Task sizes [{223}]
+Task sizes [{223}]
+Task sizes [{223}]
+---- Ratio {17,223} AvgTime 175940209.33333334
+Task sizes [{224}]
+Task sizes [{224}]
+Task sizes [{224}]
+---- Ratio {16,224} AvgTime 176616089.66666666
+Task sizes [{225}]
+Task sizes [{225}]
+Task sizes [{225}]
+---- Ratio {15,225} AvgTime 177467052.66666666
+Task sizes [{226}]
+Task sizes [{226}]
+Task sizes [{226}]
+---- Ratio {14,226} AvgTime 178110400.0
+Task sizes [{227}]
+Task sizes [{227}]
+Task sizes [{227}]
+---- Ratio {13,227} AvgTime 178977143.0
+Task sizes [{228}]
+Task sizes [{228}]
+Task sizes [{228}]
+---- Ratio {12,228} AvgTime 179558018.0
+Task sizes [{229}]
+Task sizes [{229}]
+Task sizes [{229}]
+---- Ratio {11,229} AvgTime 180414894.66666666
+Task sizes [{230}]
+Task sizes [{230}]
+Task sizes [{230}]
+---- Ratio {10,230} AvgTime 181208166.66666666
+Task sizes [{231}]
+Task sizes [{231}]
+Task sizes [{231}]
+---- Ratio {9,231} AvgTime 181824262.0
+Task sizes [{232}]
+Task sizes [{232}]
+Task sizes [{232}]
+---- Ratio {8,232} AvgTime 182550662.33333334
+Task sizes [{233}]
+Task sizes [{233}]
+Task sizes [{233}]
+---- Ratio {7,233} AvgTime 183331774.0
+Task sizes [{234}]
+Task sizes [{234}]
+Task sizes [{234}]
+---- Ratio {6,234} AvgTime 184058133.66666666
+Task sizes [{235}]
+Task sizes [{235}]
+Task sizes [{235}]
+---- Ratio {5,235} AvgTime 184820765.0
+Task sizes [{236}]
+Task sizes [{236}]
+Task sizes [{236}]
+---- Ratio {4,236} AvgTime 185512664.33333334
+Task sizes [{237}]
+Task sizes [{237}]
+Task sizes [{237}]
+---- Ratio {3,237} AvgTime 186283889.0
+Task sizes [{238}]
+Task sizes [{238}]
+Task sizes [{238}]
+---- Ratio {2,238} AvgTime 187000248.33333334
+Task sizes [{239}]
+Task sizes [{239}]
+Task sizes [{239}]
+---- Ratio {1,239} AvgTime 187732983.66666666
+Task sizes [{240}]
+Task sizes [{240}]
+Task sizes [{240}]
+---- Ratio {0,240} AvgTime 188472092.0
+-- Best time
+---- Best time is 62244180.666666664
+-- Uniform time
+---- Uniform time is 1.002566e8
+

@@ -1,0 +1,165 @@
+ant 1 0
+Ratio is {0,1000}
+Time for (CPU:1,GPU0) is 110984887
+ant 1 0
+Ratio is {0,1000}
+Time for (CPU:1,GPU0) is 110672169
+ant 1 0
+Ratio is {0,1000}
+Time for (CPU:1,GPU0) is 112317348
+ant 1 0
+Ratio is {0,1000}
+Time for (CPU:1,GPU0) is 110661059
+ant 1 0
+Ratio is {0,1000}
+Time for (CPU:1,GPU0) is 110623069
+ant 2 0
+Ratio is {0,1000}
+Time for (CPU:2,GPU0) is 56268140
+ant 2 0
+Ratio is {0,1000}
+Time for (CPU:2,GPU0) is 56156100
+ant 2 0
+Ratio is {0,1000}
+Time for (CPU:2,GPU0) is 56207391
+ant 2 0
+Ratio is {0,1000}
+Time for (CPU:2,GPU0) is 56551148
+ant 2 0
+Ratio is {0,1000}
+Time for (CPU:2,GPU0) is 56166083
+ant 3 0
+Ratio is {0,1000}
+Time for (CPU:3,GPU0) is 37980521
+ant 3 0
+Ratio is {0,1000}
+Time for (CPU:3,GPU0) is 38035013
+ant 3 0
+Ratio is {0,1000}
+Time for (CPU:3,GPU0) is 37859113
+ant 3 0
+Ratio is {0,1000}
+Time for (CPU:3,GPU0) is 38009629
+ant 3 0
+Ratio is {0,1000}
+Time for (CPU:3,GPU0) is 38036024
+ant 4 0
+Ratio is {0,1000}
+Time for (CPU:4,GPU0) is 28445938
+ant 4 0
+Ratio is {0,1000}
+Time for (CPU:4,GPU0) is 28709246
+ant 4 0
+Ratio is {0,1000}
+Time for (CPU:4,GPU0) is 28522173
+ant 4 0
+Ratio is {0,1000}
+Time for (CPU:4,GPU0) is 28536752
+ant 4 0
+Ratio is {0,1000}
+Time for (CPU:4,GPU0) is 28650765
+ant 5 0
+Ratio is {0,1000}
+Time for (CPU:5,GPU0) is 23635771
+ant 5 0
+Ratio is {0,1000}
+Time for (CPU:5,GPU0) is 23551262
+ant 5 0
+Ratio is {0,1000}
+Time for (CPU:5,GPU0) is 23425933
+ant 5 0
+Ratio is {0,1000}
+Time for (CPU:5,GPU0) is 23447866
+ant 5 0
+Ratio is {0,1000}
+Time for (CPU:5,GPU0) is 23671158
+ant 6 0
+Ratio is {0,1000}
+Time for (CPU:6,GPU0) is 19847039
+ant 6 0
+Ratio is {0,1000}
+Time for (CPU:6,GPU0) is 19834421
+ant 6 0
+Ratio is {0,1000}
+Time for (CPU:6,GPU0) is 19812610
+ant 6 0
+Ratio is {0,1000}
+Time for (CPU:6,GPU0) is 19831346
+ant 6 0
+Ratio is {0,1000}
+Time for (CPU:6,GPU0) is 19773056
+ant 7 0
+Ratio is {0,1000}
+Time for (CPU:7,GPU0) is 17136840
+ant 7 0
+Ratio is {0,1000}
+Time for (CPU:7,GPU0) is 17044842
+ant 7 0
+Ratio is {0,1000}
+Time for (CPU:7,GPU0) is 17153840
+ant 7 0
+Ratio is {0,1000}
+Time for (CPU:7,GPU0) is 17048612
+ant 7 0
+Ratio is {0,1000}
+Time for (CPU:7,GPU0) is 17037860
+ant 8 0
+Ratio is {0,1000}
+Time for (CPU:8,GPU0) is 14948346
+ant 8 0
+Ratio is {0,1000}
+Time for (CPU:8,GPU0) is 14897809
+ant 8 0
+Ratio is {0,1000}
+Time for (CPU:8,GPU0) is 14995321
+ant 8 0
+Ratio is {0,1000}
+Time for (CPU:8,GPU0) is 15002213
+ant 8 0
+Ratio is {0,1000}
+Time for (CPU:8,GPU0) is 15079725
+ant 9 0
+Ratio is {0,1000}
+Time for (CPU:9,GPU0) is 13438209
+ant 9 0
+Ratio is {0,1000}
+Time for (CPU:9,GPU0) is 13387623
+ant 9 0
+Ratio is {0,1000}
+Time for (CPU:9,GPU0) is 13407656
+ant 9 0
+Ratio is {0,1000}
+Time for (CPU:9,GPU0) is 13368306
+ant 9 0
+Ratio is {0,1000}
+Time for (CPU:9,GPU0) is 13422953
+ant 10 0
+Ratio is {0,1000}
+Time for (CPU:10,GPU0) is 12038574
+ant 10 0
+Ratio is {0,1000}
+Time for (CPU:10,GPU0) is 12324778
+ant 10 0
+Ratio is {0,1000}
+Time for (CPU:10,GPU0) is 12050668
+ant 10 0
+Ratio is {0,1000}
+Time for (CPU:10,GPU0) is 12369404
+ant 10 0
+Ratio is {0,1000}
+Time for (CPU:10,GPU0) is 12105427
+ant 11 0
+Ratio is {0,1000}
+Time for (CPU:11,GPU0) is 11350706
+ant 11 0
+Ratio is {0,1000}
+Time for (CPU:11,GPU0) is 11251232
+ant 11 0
+Ratio is {0,1000}
+Time for (CPU:11,GPU0) is 11311660
+ant 11 0
+Ratio is {0,1000}
+Time for (CPU:11,GPU0) is 11284986
+ant 11 0
+Ratio is {0,1000}
+Time for (CPU:11,GPU0) is 11224577

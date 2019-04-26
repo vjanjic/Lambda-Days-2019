@@ -1,0 +1,495 @@
+ant 1 0
+Ratio is {0,1000}
+Chunk size 64000
+Time for (CPU:1,GPU0) is 152519068
+ant 1 0
+Ratio is {0,1000}
+Chunk size 64000
+Time for (CPU:1,GPU0) is 152579984
+ant 1 0
+Ratio is {0,1000}
+Chunk size 64000
+Time for (CPU:1,GPU0) is 152352533
+ant 1 0
+Ratio is {0,1000}
+Chunk size 64000
+Time for (CPU:1,GPU0) is 152455348
+ant 1 0
+Ratio is {0,1000}
+Chunk size 64000
+Time for (CPU:1,GPU0) is 152420245
+ant 2 0
+Ratio is {0,1000}
+Chunk size 32000
+Chunk size 32000
+Time for (CPU:2,GPU0) is 70418606
+ant 2 0
+Ratio is {0,1000}
+Chunk size 32000
+Chunk size 32000
+Time for (CPU:2,GPU0) is 70616890
+ant 2 0
+Ratio is {0,1000}
+Chunk size 32000
+Chunk size 32000
+Time for (CPU:2,GPU0) is 68387231
+ant 2 0
+Ratio is {0,1000}
+Chunk size 32000
+Chunk size 32000
+Time for (CPU:2,GPU0) is 70950787
+ant 2 0
+Ratio is {0,1000}
+Chunk size 32000
+Chunk size 32000
+Time for (CPU:2,GPU0) is 69506131
+ant 3 0
+Ratio is {0,1000}
+Chunk size 21312
+Chunk size 21376
+Chunk size 21312
+Time for (CPU:3,GPU0) is 49356500
+ant 3 0
+Ratio is {0,1000}
+Chunk size 21312
+Chunk size 21376
+Chunk size 21312
+Time for (CPU:3,GPU0) is 48232918
+ant 3 0
+Ratio is {0,1000}
+Chunk size 21312
+Chunk size 21376
+Chunk size 21312
+Time for (CPU:3,GPU0) is 49241853
+ant 3 0
+Ratio is {0,1000}
+Chunk size 21312
+Chunk size 21376
+Chunk size 21312
+Time for (CPU:3,GPU0) is 48712659
+ant 3 0
+Ratio is {0,1000}
+Chunk size 21376
+Chunk size 21312
+Chunk size 21312
+Time for (CPU:3,GPU0) is 49853987
+ant 4 0
+Ratio is {0,1000}
+Chunk size 16000
+Chunk size 16000
+Chunk size 16000
+Chunk size 16000
+Time for (CPU:4,GPU0) is 35234377
+ant 4 0
+Ratio is {0,1000}
+Chunk size 16000
+Chunk size 16000
+Chunk size 16000
+Chunk size 16000
+Time for (CPU:4,GPU0) is 36570160
+ant 4 0
+Ratio is {0,1000}
+Chunk size 16000
+Chunk size 16000
+Chunk size 16000
+Chunk size 16000
+Time for (CPU:4,GPU0) is 35929971
+ant 4 0
+Ratio is {0,1000}
+Chunk size 16000
+Chunk size 16000
+Chunk size 16000
+Chunk size 16000
+Time for (CPU:4,GPU0) is 34406327
+ant 4 0
+Ratio is {0,1000}
+Chunk size 16000
+Chunk size 16000
+Chunk size 16000
+Chunk size 16000
+Time for (CPU:4,GPU0) is 35694819
+ant 5 0
+Ratio is {0,1000}
+Chunk size 12800
+Chunk size 12800
+Chunk size 12800
+Chunk size 12800
+Chunk size 12800
+Time for (CPU:5,GPU0) is 28954085
+ant 5 0
+Ratio is {0,1000}
+Chunk size 12800
+Chunk size 12800
+Chunk size 12800
+Chunk size 12800
+Chunk size 12800
+Time for (CPU:5,GPU0) is 29134284
+ant 5 0
+Ratio is {0,1000}
+Chunk size 12800
+Chunk size 12800
+Chunk size 12800
+Chunk size 12800
+Chunk size 12800
+Time for (CPU:5,GPU0) is 29304828
+ant 5 0
+Ratio is {0,1000}
+Chunk size 12800
+Chunk size 12800
+Chunk size 12800
+Chunk size 12800
+Chunk size 12800
+Time for (CPU:5,GPU0) is 29567274
+ant 5 0
+Ratio is {0,1000}
+Chunk size 12800
+Chunk size 12800
+Chunk size 12800
+Chunk size 12800
+Chunk size 12800
+Time for (CPU:5,GPU0) is 28721151
+ant 6 0
+Ratio is {0,1000}
+Chunk size 10624
+Chunk size 10688
+Chunk size 10688
+Chunk size 10688
+Chunk size 10688
+Chunk size 10624
+Time for (CPU:6,GPU0) is 23416860
+ant 6 0
+Ratio is {0,1000}
+Chunk size 10624
+Chunk size 10624
+Chunk size 10688
+Chunk size 10688
+Chunk size 10688
+Chunk size 10688
+Time for (CPU:6,GPU0) is 24120323
+ant 6 0
+Ratio is {0,1000}
+Chunk size 10688
+Chunk size 10624
+Chunk size 10688
+Chunk size 10688
+Chunk size 10688
+Chunk size 10624
+Time for (CPU:6,GPU0) is 23931998
+ant 6 0
+Ratio is {0,1000}
+Chunk size 10624
+Chunk size 10624
+Chunk size 10688
+Chunk size 10688
+Chunk size 10688
+Chunk size 10688
+Time for (CPU:6,GPU0) is 24065725
+ant 6 0
+Ratio is {0,1000}
+Chunk size 10688
+Chunk size 10624
+Chunk size 10624
+Chunk size 10688
+Chunk size 10688
+Chunk size 10688
+Time for (CPU:6,GPU0) is 24001759
+ant 7 0
+Ratio is {0,1000}
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9088
+Time for (CPU:7,GPU0) is 22122317
+ant 7 0
+Ratio is {0,1000}
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9088
+Time for (CPU:7,GPU0) is 22306260
+ant 7 0
+Ratio is {0,1000}
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9088
+Time for (CPU:7,GPU0) is 22616928
+ant 7 0
+Ratio is {0,1000}
+Chunk size 9152
+Chunk size 9088
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Time for (CPU:7,GPU0) is 22778851
+ant 7 0
+Ratio is {0,1000}
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9152
+Chunk size 9088
+Time for (CPU:7,GPU0) is 22034818
+ant 8 0
+Ratio is {0,1000}
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Time for (CPU:8,GPU0) is 19504804
+ant 8 0
+Ratio is {0,1000}
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Time for (CPU:8,GPU0) is 19109754
+ant 8 0
+Ratio is {0,1000}
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Time for (CPU:8,GPU0) is 18610129
+ant 8 0
+Ratio is {0,1000}
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Time for (CPU:8,GPU0) is 18941718
+ant 8 0
+Ratio is {0,1000}
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Chunk size 8000
+Time for (CPU:8,GPU0) is 19290683
+ant 9 0
+Ratio is {0,1000}
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Chunk size 7168
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Time for (CPU:9,GPU0) is 17406632
+ant 9 0
+Ratio is {0,1000}
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Chunk size 7168
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Time for (CPU:9,GPU0) is 17459084
+ant 9 0
+Ratio is {0,1000}
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Chunk size 7168
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Time for (CPU:9,GPU0) is 17412485
+ant 9 0
+Ratio is {0,1000}
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Chunk size 7168
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Time for (CPU:9,GPU0) is 17525484
+ant 9 0
+Ratio is {0,1000}
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Chunk size 7168
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Chunk size 7104
+Time for (CPU:9,GPU0) is 17528270
+ant 10 0
+Ratio is {0,1000}
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Time for (CPU:10,GPU0) is 16854227
+ant 10 0
+Ratio is {0,1000}
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Time for (CPU:10,GPU0) is 16982115
+ant 10 0
+Ratio is {0,1000}
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Time for (CPU:10,GPU0) is 15812644
+ant 10 0
+Ratio is {0,1000}
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Time for (CPU:10,GPU0) is 17233519
+ant 10 0
+Ratio is {0,1000}
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Chunk size 6400
+Time for (CPU:10,GPU0) is 15554694
+ant 11 0
+Ratio is {0,1000}
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5760
+Time for (CPU:11,GPU0) is 15382387
+ant 11 0
+Ratio is {0,1000}
+Chunk size 5824
+Chunk size 5760
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Time for (CPU:11,GPU0) is 15487756
+ant 11 0
+Ratio is {0,1000}
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5760
+Time for (CPU:11,GPU0) is 15375354
+ant 11 0
+Ratio is {0,1000}
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5760
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Time for (CPU:11,GPU0) is 15545341
+ant 11 0
+Ratio is {0,1000}
+Chunk size 5824
+Chunk size 5824
+Chunk size 5760
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Chunk size 5824
+Time for (CPU:11,GPU0) is 15308217
